@@ -1,0 +1,28 @@
+textarea{
+    resize: none;
+}
+input{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-container{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    background-color: beige;
+}
+.btn-send-form{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group{
+    margin-bottom: 0;
+}
+
+.navbar-blog{
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}

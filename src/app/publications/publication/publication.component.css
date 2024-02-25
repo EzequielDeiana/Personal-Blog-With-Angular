@@ -1,0 +1,50 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+textarea{
+    resize: none;
+}
+
+input{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-container{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    background-color: beige;
+}
+.btn-send-form{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.publication-container{
+    background-color: beige;
+    border-right: solid 1px black;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.publication-name{
+    color: #000;
+    font-size: 18px
+}
+.publication-text{
+    color: #111;
+    font-size: 18px;
+}
+.btn-edit-publication{
+    margin-bottom: 4rem;
+}

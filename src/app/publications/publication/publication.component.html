@@ -1,0 +1,49 @@
+<!-- <div class="container"> -->
+<div *ngIf="publication">
+  <div class="col-md-6 col-md-offset-3 publication-container" [hidden]="textSpan">
+    <button class="close" aria-label="Close" (click)="deleteBtn()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div>
+      <span class="publication-name"
+        ><strong>{{ publicationsFather[index].name }}</strong></span
+      >
+    </div>
+    <br />
+    <span class="text-left publication-text">{{ publicationsFather[index].text }}</span>
+    <div class="btn-edit-container">
+      <br />
+      <button
+        class="btn btn-default btn-edit-publication"
+        (click)="submitToTextArea()"
+      >
+        Modify
+      </button>
+    </div>
+  </div>
+  <div [hidden]="textArea">
+    <form>
+        <div class="col-md-6 col-md-offset-3 publication-container">
+          <div>
+            <span class="publication-name"><strong>{{ publicationsFather[index].name }}</strong></span>
+            <textarea
+              name="form-text"
+              id="text-message"
+              rows="4"
+              class="form-control form-message-box"
+              name="publicationMessage"
+              [(ngModel)]="publicationsFather[index].text"
+              #publicationMessage
+            ></textarea>
+          </div>
+          <button class="btn btn-default btn-send-form" (click)="submitToSpan(); saveChange()">
+            Send
+          </button>
+        </div>
+    </form>
+  </div>
+</div>
+<div *ngIf="!publication">
+  <h2>Error: publication not found</h2>
+</div>
+<!-- </div> -->
