@@ -6,6 +6,10 @@ input{
     margin-bottom: 2rem;
 }
 
+.main-content{
+    height: 100vh;
+}
+
 .form-container{
     border-left: solid 1px black;
     border-right: solid 1px black;
